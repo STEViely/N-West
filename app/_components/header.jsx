@@ -34,10 +34,10 @@ export default function Header() {
 
   return (
     <header>
-      <nav className="w-full flex justify-between items-center px-4 sm:px-8 py-4 sm:py-6 bg-white">
+      <nav className="bg-black w-full flex justify-between items-center px-4 sm:px-8 py-4 sm:py-6 ">
         {/* Logo */}
         <Link href="/">
-          <div className="w-[96px] md:w-[120px] lg:w-[193px]">
+          <div className="w-[96px] md:w-[120px] lg:w-[193px] ">
             <Image src={nwestlogo} alt="n-west" />
           </div>
         </Link>
@@ -52,7 +52,7 @@ export default function Header() {
             {isMenuOpen ? (
               // Close icon
               <svg
-                className="w-6 h-6"
+                className="w-6 h-6 text-white"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -68,7 +68,7 @@ export default function Header() {
             ) : (
               // Menu icon
               <svg
-                className="w-6 h-6"
+                className="w-6 h-6 text-white"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -86,7 +86,7 @@ export default function Header() {
         </div>
 
         {/* Desktop Navigation Links */}
-        <ul className=" hidden lg:flex flex-row items-center gap-8 text-black text-[16px] sm:text-[20px] md:text-[24px] z-10">
+        <ul className=" hidden lg:flex flex-row items-center gap-8 text-white text-[16px] sm:text-[20px] md:text-[24px] z-10">
           {renderNavLink("/", "HOME")}
           {renderNavLink("/products", "PRODUCTS")}
           {renderNavLink("/aboutUs", "ABOUT US")}
@@ -101,8 +101,8 @@ export default function Header() {
             className="fixed inset-0 bg-black bg-opacity-50 z-40"
             onClick={toggleMenu} // Close menu when clicking outside
           ></div>
-          <div className="absolute right-0 top-14 bg-white w-[60%] sm:w-[40%] flex flex-col items-end px-4 py-6 z-50">
-            <ul className="flex flex-col gap-6 text-black text-[18px]">
+          <div className="absolute right-0 top-14 bg-black w-[60%] sm:w-[40%] flex flex-col items-end px-4 py-6 z-50">
+            <ul className="flex flex-col gap-6 text-white text-[18px]">
               {renderNavLink("/", "HOME")}
               {renderNavLink("/products", "PRODUCTS")}
               {renderNavLink("/aboutUs", "ABOUT US")}
