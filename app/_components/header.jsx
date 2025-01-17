@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"; // Import useState and useEffect
 import Link from "next/link";
 import Image from "next/image";
-import nwestlogo from "@/public/nwestlogo.png";
+import NWEST from "@/public/NWEST.png";
 import { usePathname } from "next/navigation";
 import classNames from "classnames";
 
@@ -38,7 +38,7 @@ export default function Header() {
         {/* Logo */}
         <Link href="/">
           <div className="w-[96px] md:w-[120px] lg:w-[193px] ">
-            <Image src={nwestlogo} alt="n-west" />
+            <Image src={NWEST} alt="n-west" />
           </div>
         </Link>
 
@@ -98,7 +98,7 @@ export default function Header() {
       {isMenuOpen && (
         <>
           <div
-            className="fixed inset-0 bg-black bg-opacity-50 z-40"
+            className="fixed inset-0 bg-[#1C1C1C] bg-opacity-50 z-50"
             onClick={toggleMenu} // Close menu when clicking outside
           ></div>
           <div className="absolute right-0 top-14 bg-black w-[60%] sm:w-[40%] flex flex-col items-end px-4 py-6 z-50">

@@ -1,7 +1,6 @@
 import { Mure } from "./_ui/font";
 import Header from "./_components/header";
 import "@/app/globals.css";
-import SubNavBar from "./_components/subNavBar";
 import Footer from "./_components/footer";
 
 export const metadata = {
@@ -17,12 +16,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="En" className="bg-black">
       <body className={Mure.className}>
-        <div className=" flex flex-col ">
-          <Header />
-          <SubNavBar />
+        <Header />
+        <div className=" flex flex-col mx-10">
           <main>{children}</main>
-          <Footer />
         </div>
+        <Footer />
       </body>
     </html>
   );

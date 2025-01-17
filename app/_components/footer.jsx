@@ -1,55 +1,51 @@
 import Image from "next/image";
-import nwestlogo from "@/public/nwestlogo.png";
+import NWEST from "@/public/NWEST.png";
 import Link from "next/link";
 export default function Footer() {
   return (
-    <>
-      <div className="flex justify-around items-start gap-10 mx-auto my-16 text-white">
-        <Image
-          src={nwestlogo}
-          alt="footerLogo"
-          width={102.54}
-          height={102.54}
-        />
-        <hr className="ml-2 border-[1px] h-[104.51px]" />
-        <div className="w-[30%]">
-          <h1>About Us</h1>
-          <p className=" font-thin">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-            similique molestias recusandae totam debitis beatae veniam, nam
+    <div className="w-full mt-4 px-10 py-5 bg-[#1C1C1C]">
+      <div className="flex gap- justify-around">
+        <div className="w-[25%] flex flex-col gap-4">
+          <div>
+            <Image src={NWEST} alt="logo" width={60} height={20} />
+          </div>
+          <p className="text-white font-light text-[8px]">
+            intergio a beautidful digital tranformation consultrancy & solfware
+            development company that provide IT solotutions.
           </p>
         </div>
-
-        <div className="w-[20%]">
-          <h1>Service</h1>
-          <Link href="products" className="font-thin">
-            Mirror
-          </Link>
-        </div>
-        <div className="w-[20%]">
-          <h1>Contact Us</h1>
-          <div className="flex gap-6">
-            <a
-              href="https://lin.ee/SFZ0yDB"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button>
-                <Image src="/Line.png" alt="line" width={19} height={18} />
-              </button>
-            </a>
-            <a
-              href="http://m.me/nwest4"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button>
-                <Image src="/Chat.png" alt="chat" width={18} height={18} />
-              </button>
-            </a>
+        <div className=" flex flex-col gap-4">
+          <div>
+            <p className="text-white text-[8px] font-bold">Contact</p>
           </div>
+          <p className="text-white font-light text-[8px]">
+            Adress: 2 7 Thachalong,
+            <br /> Bangna, 10002, Thailand{" "}
+          </p>
+          <p className="text-white font-light text-[8px]">
+            Email: nwestautopart@mail.com{" "}
+          </p>
+          <p className="text-white font-light text-[8px]">
+            Phone: +66 12345678
+          </p>
+        </div>
+        <div className=" flex flex-col gap-4">
+          <div>
+            <p className="text-white text-[8px] font-bold">Contact</p>
+          </div>
+          <p className="text-white font-light text-[8px]">mocking up</p>
+          <p className="text-white font-light text-[8px]">delivery</p>
+        </div>
+        <div className=" flex flex-col gap-4">
+          <div>
+            <p className="text-white text-[8px] font-bold">Contact</p>
+          </div>
+          <p className="text-white font-light text-[8px]">mirror</p>
+          <p className="text-white font-light text-[8px]">sport light</p>
+          <p className="text-white font-light text-[8px]">rare light</p>
+          <p className="text-white font-light text-[8px]">other</p>
         </div>
       </div>
-    </>
+    </div>
   );
 }

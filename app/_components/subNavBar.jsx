@@ -21,37 +21,39 @@ export default function SubNavbar({ bg }) {
   return (
     <header>
       <nav className="w-full">
-        <ul className={`flex justify-center text-white text-[16px] gap-1`}>
+        <ul
+          className={`flex justify-center text-white text-[14px] font-light gap-0.5`}
+        >
           <li
-            className={`w-[125px] bg-gradient-to-b from-[#000939] to-[#0000fe] text-center hover:underline ${
+            className={`w-[120px] p-0.5 bg-gradient-to-b from-[#0000fe] to-[#000939] text-center hover:underline ${
               isActive("/toyota") ? "underline" : ""
             }`}
           >
             <Link href="/toyota">TOYOTA</Link>
           </li>
           <li
-            className={`w-[125px] bg-gradient-to-b from-[#000939] to-[#0000fe] text-center hover:underline ${
+            className={`w-[120px] p-0.5 bg-gradient-to-b from-[#0000fe] to-[#000939] text-center hover:underline ${
               isActive("/honda") ? "underline" : ""
             }`}
           >
             <Link href="/honda">HONDA</Link>
           </li>
           <li
-            className={`w-[125px] bg-gradient-to-b from-[#000939] to-[#0000fe] text-center hover:underline ${
+            className={`w-[120px] p-0.5  bg-gradient-to-b from-[#0000fe] to-[#000939] text-center hover:underline ${
               isActive("/nissan") ? "underline" : ""
             }`}
           >
             <Link href="/nissan">NISSAN</Link>
           </li>
           <li
-            className={`w-[125px] bg-gradient-to-b from-[#000939] to-[#0000fe] text-center hover:underline ${
+            className={`w-[120px]  p-0.5 bg-gradient-to-b from-[#0000fe] to-[#000939] text-center hover:underline ${
               isActive("/aboutUs") ? "underline" : ""
             }`}
           >
             <Link href="/suzuki">SUZUKI</Link>
           </li>
           <li
-            className={`w-[125px] bg-gradient-to-b from-[#000939] to-[#0000fe] text-center hover:underline ${
+            className={`w-[120px]  p-0.5 bg-gradient-to-b from-[#0000fe] to-[#000939] text-center hover:underline ${
               isActive("/bmw") ? "underline" : ""
             }`}
           >
