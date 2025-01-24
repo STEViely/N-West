@@ -45,19 +45,37 @@ export default function SubNavbar({ bg }) {
           >
             <Link href="/nissan">NISSAN</Link>
           </li>
+        </ul>
+        <ul
+          className={`flex justify-center text-white text-[14px] font-light gap-0.5`}
+        >
           <li
             className={`w-[120px]  p-0.5 bg-gradient-to-b from-[#0000fe] to-[#000939] text-center hover:underline ${
-              isActive("/aboutUs") ? "underline" : ""
+              isActive("/suzuki") ? "underline" : ""
             }`}
           >
             <Link href="/suzuki">SUZUKI</Link>
           </li>
           <li
             className={`w-[120px]  p-0.5 bg-gradient-to-b from-[#0000fe] to-[#000939] text-center hover:underline ${
-              isActive("/bmw") ? "underline" : ""
+              isActive("/byd") ? "underline" : ""
             }`}
           >
-            <Link href="/bmw">BMW</Link>
+            <Link href="/byd">BYD</Link>
+          </li>
+          <li
+            className={`w-[120px]  p-0.5 bg-gradient-to-b from-[#0000fe] to-[#000939] text-center hover:underline ${
+              isActive("/tesla") ? "underline" : ""
+            }`}
+          >
+            <Link href="/tesla">TESLA</Link>
+          </li>
+          <li
+            className={`w-[120px]  p-0.5 bg-gradient-to-b from-[#0000fe] to-[#000939] text-center hover:underline ${
+              isActive("/mazda") ? "underline" : ""
+            }`}
+          >
+            <Link href="/mazda">MAZDA</Link>
           </li>
         </ul>
       </nav>

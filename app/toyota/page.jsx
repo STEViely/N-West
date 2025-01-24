@@ -1,3 +1,9 @@
+import SubNavbar from "../_components/subNavBar";
+
 export default function Page() {
-  return <div>TOYOTA</div>;
+  return (
+    <>
+      <SubNavbar />
+    </>
+  );
 }

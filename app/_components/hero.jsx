@@ -12,7 +12,7 @@ export default function Hero() {
         <p className="font-light text-[10px]">
           The Best Part Can Be Found here
         </p>
-        <div className="flex gap-2 mt-2">
+        <div className="flex gap-2 mt-6">
           <button className="w-[90px] border-[1.5px] border-white text-[12px] p-1 bg-gradient-to-b from-[#0000fe] font-light">
             OUR PRODUCTS
           </button>
