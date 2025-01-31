@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
       <body className={Mure.className}>
         <Header />
         <div className=" flex flex-col mx-10">
-          <main>{children}</main>
+          <main className="flex-grow">{children}</main>
         </div>
         <Footer />
       </body>
