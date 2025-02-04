@@ -1,4 +1,4 @@
-import { Mure } from "./_ui/font";
+import { Mure } from "./_ui/font"; // ตรวจสอบว่า Mure ถูกนิยามไว้ในไฟล์นี้แล้ว
 import Header from "./_components/header";
 import "@/app/globals.css";
 import Footer from "./_components/footer";
@@ -14,13 +14,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="En" className="bg-black">
+    <html lang="en" className="bg-black">
       <body className={Mure.className}>
         <Header />
-        <div className=" flex flex-col mx-10">
+        <div className="flex flex-col min-h-screen">
           <main className="flex-grow">{children}</main>
+          <Footer />
         </div>
-        <Footer />
       </body>
     </html>
   );
