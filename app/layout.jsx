@@ -1,4 +1,4 @@
-import { Mure } from "./_ui/font"; // ตรวจสอบว่า Mure ถูกนิยามไว้ในไฟล์นี้แล้ว
+import { Mure } from "./_ui/font";
 import Header from "./_components/header";
 import "@/app/globals.css";
 import Footer from "./_components/footer";
@@ -9,7 +9,7 @@ export const metadata = {
     default: "N-WEST",
   },
   description:
-    "รับออกเเบบโลโก้, รับออกเเบบเว็บไซต์, รับสร้างเว็บไซต์, logo design, website design, web building, รับทำเว็บไซต์, ทำโลโก้, ทำLogo, รับทำเว็บไซต์, รับเขียนwebsite, ออกแบบ, gg design, GG Design, ราคาประหยัด",
+    "กระจกรถยนต์คุณภาพสูง, ของเเต่งรถยนต์, กระจกรถยนต์, รถนต์, กระจกตัดเเสง",
 };
 
 export default function RootLayout({ children }) {
