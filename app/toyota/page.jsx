@@ -75,19 +75,19 @@ export default function Page() {
   return (
     <>
       <SubNavbar />
-      <div className="flex flex-col justify-center items-center mt-4 mb-4">
-        <div className="grid grid-cols-2 gap-2 ">
+      <div className="flex flex-col justify-center items-center mt-8 mb-4">
+        <div className="grid grid-cols-1 gap-1 ">
           {images.slice(0, 9).map((img, index) => (
             <div
               key={img.src}
-              className="h-[140px] w-[140px] md:h-[170px] md:w-[170px] lg:h-[250px] lg:w-[250px] xl:h-[350px] xl:w-[350px] cursor-pointer transition-transform duration-300 ease-in-out transform hover:scale-105"
+              className="h-[180px] w-[180px] md:h-[170px] md:w-[170px] lg:h-[250px] lg:w-[250px] xl:h-[350px] xl:w-[350px] cursor-pointer transition-transform duration-300 ease-in-out transform hover:scale-105"
               onClick={() => openModal(index)}
             >
               <Image
                 src={img.src}
                 alt={img.alt}
-                width={135.53}
-                height={135.53}
+                width={180}
+                height={180}
                 className="object-cover "
               />
               <span className="text-white text-[14px]">{img.name}</span>
@@ -97,7 +97,7 @@ export default function Page() {
       </div>
 
       {isModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-85 flex justify-center pt-40 sm:z-50 sm:px-4 lg:pt-20">
+        <div className="fixed inset-0 bg-black bg-opacity-85 flex justify-center pt-40 sm:z-50 sm:px-4 lg:pt-10">
           <div
             className="relative max-w-screen-lg mx-auto"
             onTouchStart={handleTouchStart}
@@ -110,20 +110,23 @@ export default function Page() {
             >
               ×
             </button>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center relative">
+              {/* ชื่อภาพด้านบนซ้าย */}
+              <span className="absolute top-[-30px] left-0 text-white text-lg sm:text-xl lg:text-2xl font-semibold">
+                {images[currentImageIndex].name}
+              </span>
+
               <button
                 className="absolute left-[-30px] top-1/4 text-white font-bold text-[24px] sm:text-[32px] lg:text-[50px] lg:top-1/3"
                 onClick={prevImage}
               >
                 &lt;
               </button>
-              {/* Modal image with larger size and object-contain */}
               <Image
                 src={images[currentImageIndex].src}
                 alt={images[currentImageIndex].alt}
-                width={images[currentImageIndex].width}
-                height={images[currentImageIndex].height}
-                className="object-contain w-full h-full"
+                width={400}
+                height={400}
               />
               <button
                 className="absolute right-[-30px] top-1/4 text-white font-bold text-[24px] sm:text-[32px] lg:text-[50px] lg:top-1/3"
@@ -132,18 +135,21 @@ export default function Page() {
                 &gt;
               </button>
             </div>
+
+            {/* ภาพเล็กพร้อมชื่อด้านล่าง */}
             <div className="grid grid-cols-4 lg:grid-cols-8 gap-1 mt-2 ">
-              {images.slice(1).map((img, index) => (
+              {images.map((img, index) => (
                 <button
                   key={img.src}
-                  className={`w-[80px] sm:w-[70px] lg:w-[100px] mx-auto ${
-                    currentImageIndex === index + 1
-                      ? "border-2 border-white"
-                      : ""
+                  className={`flex flex-col items-center w-[90px] sm:w-[70px] lg:w-[100px] mx-auto ${
+                    currentImageIndex === index ? "border-2 border-white" : ""
                   }`}
-                  onClick={() => setCurrentImageIndex(index + 1)}
+                  onClick={() => setCurrentImageIndex(index)}
                 >
                   <Image src={img.src} alt={img.alt} width={100} height={75} />
+                  <span className="text-white text-[12px] sm:text-[14px]">
+                    {img.name}
+                  </span>
                 </button>
               ))}
             </div>

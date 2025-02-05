@@ -17,10 +17,10 @@ export default function RootLayout({ children }) {
     <html lang="en" className="bg-black">
       <body className={Mure.className}>
         <Header />
-        <div className="flex flex-col min-h-screen">
-          <main className="flex-grow">{children}</main>
-          <Footer />
+        <div className="flex flex-col mx-10 min-h-screen">
+          <main>{children}</main>
         </div>
+        <Footer />
       </body>
     </html>
   );
