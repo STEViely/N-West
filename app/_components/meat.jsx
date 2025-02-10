@@ -1,48 +1,61 @@
-import square from "@/public/square.png";
+import one from "@/public/meatPics/one.jpg"
+import two from "@/public/meatPics/two.jpg"
+import three from "@/public/meatPics/three.jpg"
+import four from "@/public/meatPics/four.jpg"
+import five from "@/public/meatPics/five.jpg"
+import six from "@/public/meatPics/six.jpg"
+import seven from "@/public/meatPics/seven.jpg"
 import MeatContainer from "./meatContainer";
 export default function page() {
   const info = [
     {
       id: 1,
-      title: "1. ลดแสงสะท้อนจากไฟหน้ารถ (Anti-glare)",
+      title: "1. ลดแสงสะท้อนจากไฟหน้ารถ",
       content:
-        "สีฟ้าของกระจกช่วยลดการสะท้อนจากไฟหน้าของรถที่ขับตามหลัง โดยเฉพาะในช่วงเวลากลางคืนช่วยลดความเมื่อยล้าของสายตาและเพิ่มความชัดเจนในการมองเห็น",
-      img: square,
+        "สีฟ้าของกระจกช่วยลดการสะท้อนจากไฟหน้าของรถที่ขับตามหลัง ",
+      img: one,
     },
     {
       id: 2,
-      title: "2. ตัดแสงยูวี (UV Protection)",
+      title: "2. ตัดแสงยูวี",
       content:
-        "กระจกมองข้างที่เคลือบสีฟ้ามักมีคุณสมบัติช่วยลดการส่งผ่านรังสี UV ซึ่งปกป้องดวงตาและลดผลกระทบจากแสงแดดจ้าที่สะท้อนเข้ามา",
-      img: square,
+        "กระจกเคลือบสีฟ้ามีคุณสมบัติช่วยลดการส่งผ่านรังสี UV ซึ่งปกป้องดวงตาและลดผลกระทบจากแสงแดด",
+      img: two,
     },
 
     {
       id: 3,
-      title: "3. เพิ่มความคมชัด (Enhanced Clarity)",
+      title: "3. เพิ่มความคมชัด",
       content:
         "สีฟ้าช่วยลดการสะท้อนของแสงภายในกระจกเอง ทำให้ผู้ขับขี่มองเห็นภาพด้านหลังได้ชัดเจนมากขึ้น",
-      img: square,
+      img: three,
     },
     {
       id: 4,
       title: "4. ช่วยในการมองเห็นในทุกสภาพอากาศ",
       content:
-        "บางรุ่นมาพร้อมกับสารเคลือบป้องกันน้ำ (Hydrophobic Coating) ทำให้น้ำฝนและคราบสกปรกเกาะกระจกได้น้อยลง ช่วยให้มองเห็นได้ชัดเจนแม้ในขณะที่ฝนตก",
-      img: square,
+        "มีสารเคลือบป้องกันน้ำ ทำให้น้ำฝนและคราบสกปรกเกาะกระจกได้น้อยลง",
+      img: four,
     },
     {
       id: 5,
       title: "5. ป้องกันคราบน้ำและสิ่งสกปรก",
-      content: "เว็บที่มีฟังก์ชันซับซ้อน คล้ายกับแอปพลิเคชัน ",
-      img: square,
+      content: "มีการเคลือบสารที่สะท้อนน้ำ เเละครามสกปรก",
+      img: five,
     },
     {
       id: 6,
       title: "6. ความสวยงามและทันสมัย",
       content:
         "สีฟ้าบนกระจกมองข้างเพิ่มความสวยงามและลุคที่ดูพรีเมียมให้กับรถยนต์",
-      img: square,
+      img: six,
+    },
+    {
+      id: 7,
+      title: "7. กระจกเลนส์ไวด์ ",
+      content:
+        "เพิ่มมุมมองกว้างขึ้น ลดมุมอับสายตา",
+      img: seven,
     },
   ];
 
