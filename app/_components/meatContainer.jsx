@@ -17,8 +17,8 @@ export default function MeatContainer({ title, content, img, reverse }) {
         <Image
           src={img}
           alt="webPreview"
-          width={50}
-          height={50}
+          width={1000}
+          height={1000}
           className="w-[200px] md:w-[250px] lg:w-[340px] xl:w-[400px] 2xl:w-[500px] drop-shadow-lg"
         />
       </div>
