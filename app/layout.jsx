@@ -1,4 +1,4 @@
-import { Mure } from "./_ui/font";
+import { ibmThai } from "./_ui/font";
 import Header from "./_components/header";
 import "@/app/globals.css";
 import Footer from "./_components/footer";
@@ -14,8 +14,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="bg-black">
-      <body className={Mure.className}>
+    <html lang="th" className="bg-black">
+      <body className={ibmThai.className}>
         <Header />
         <div className="flex flex-col mx-10 min-h-screen">
           <main>{children}</main>

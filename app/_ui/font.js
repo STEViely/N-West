@@ -1,6 +1,6 @@
-import { Murecho } from "next/font/google";
+import { IBM_Plex_Sans_Thai } from "next/font/google";
 
-export const Mure = Murecho({
-  subsets: ["latin"],
+export const ibmThai = IBM_Plex_Sans_Thai({
+  subsets: ["thai"],
   weight: ["200", "500"],
 });

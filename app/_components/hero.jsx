@@ -8,39 +8,19 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 const slides = [
-  {
-    image: "/images/i1.jpg",
-    text: "ลดแสงสะท้อนจากไฟหน้ารถ",
-  },
-  {
-    image: "/images/i2.jpg",
-    text: "ตัดแสงยูวี",
-  },
-  {
-    image: "/images/i3.jpg",
-    text: "เพิ่มความคมชัด",
-  },
-  {
-    image: "/images/i4.jpg",
-    text: "ช่วยในการมองเห็นในทุกสภาพอากาศ",
-  },
-  {
-    image: "/images/i5.jpg",
-    text: "นวัตกรรมที่เปลี่ยนโลก",
-  },
-  {
-    image: "/images/i6.jpg",
-    text: "ป้องกันคราบน้ำและสิ่งสกปรก",
-  },
-  {
-    image: "/images/i7.jpg",
-    text: "ความสวยงามและทันสมัย",
-  },
+  { image: "/images/i1.jpg", text: "ลดแสงสะท้อนจากไฟหน้ารถ" },
+  { image: "/images/i2.jpg", text: "ตัดแสงยูวี" },
+  { image: "/images/i3.jpg", text: "เพิ่มความคมชัด" },
+  { image: "/images/i4.jpg", text: "ช่วยในการมองเห็นในทุกสภาพอากาศ" },
+  { image: "/images/i5.jpg", text: "นวัตกรรมที่เปลี่ยนโลก" },
+  { image: "/images/i6.jpg", text: "ป้องกันคราบน้ำและสิ่งสกปรก" },
+  { image: "/images/i7.jpg", text: "ความสวยงามและทันสมัย" },
 ];
 
 const HeroSection = () => {
   return (
     <section className="relative w-full h-[250px] sm:h-[350px] md:h-[450px] lg:h-[500px] xl:h-[600px]">
+      {/* Swiper Slider */}
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -49,7 +29,7 @@ const HeroSection = () => {
           disableOnInteraction: false,
         }}
         pagination={{ clickable: true }}
-        navigation={true}
+        navigation={{ nextEl: ".custom-next", prevEl: ".custom-prev" }} // ✅ ใช้ปุ่ม custom
         modules={[Autoplay, Pagination, Navigation]}
         className="w-full h-full"
       >
@@ -72,6 +52,14 @@ const HeroSection = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+
+      {/* 🔥 ปุ่ม Navigation Custom */}
+      <button className="custom-prev absolute top-1/2 left-5 transform -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-50 text-black p-3 rounded-full z-10">
+        ◀
+      </button>
+      <button className="custom-next absolute top-1/2 right-5 transform -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-50 text-black p-3 rounded-full z-10">
+        ▶
+      </button>
     </section>
   );
 };
