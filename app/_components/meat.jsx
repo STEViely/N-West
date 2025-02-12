@@ -1,25 +1,18 @@
-import one from "@/public/meatPics/one.jpg"
-import two from "@/public/meatPics/two.jpg"
-import three from "@/public/meatPics/three.jpg"
-import four from "@/public/meatPics/four.jpg"
-import five from "@/public/meatPics/five.jpg"
-import six from "@/public/meatPics/six.jpg"
-import seven from "@/public/meatPics/seven.jpg"
+import one from "@/public/meatPics/one.jpg";
+import two from "@/public/meatPics/two.jpg";
+import three from "@/public/meatPics/three.jpg";
+import four from "@/public/meatPics/four.jpg";
+import five from "@/public/meatPics/five.jpg";
+import six from "@/public/meatPics/six.jpg";
+import seven from "@/public/meatPics/seven.jpg";
 import MeatContainer from "./meatContainer";
 export default function page() {
   const info = [
     {
       id: 1,
-      title: "1. ลดแสงสะท้อนจากไฟหน้ารถ",
+      title: "1. ลดแสงสะท้อนและตัดแสงยูวี",
       content:
-        "สีฟ้าของกระจกช่วยลดการสะท้อนจากไฟหน้าของรถที่ขับตามหลัง ",
-      img: one,
-    },
-    {
-      id: 2,
-      title: "2. ตัดแสงยูวี",
-      content:
-        "กระจกเคลือบสีฟ้ามีคุณสมบัติช่วยลดการส่งผ่านรังสี UV ซึ่งปกป้องดวงตาและลดผลกระทบจากแสงแดด",
+        "สีฟ้าของกระจกช่วยลดการสะท้อนจากไฟหน้าของรถที่ขับตามหลัง และมีคุณสมบัติช่วยลดการส่งผ่านรังสี UV ซึ่งปกป้องดวงตาและลดผลกระทบจากแสงแดด ",
       img: two,
     },
 
@@ -33,8 +26,7 @@ export default function page() {
     {
       id: 4,
       title: "4. ช่วยในการมองเห็นในทุกสภาพอากาศ",
-      content:
-        "มีสารเคลือบป้องกันน้ำ ทำให้น้ำฝนและคราบสกปรกเกาะกระจกได้น้อยลง",
+      content: "มีสารเคลือบป้องกันน้ำ ทำให้น้ำฝนและคราบสกปรกเกาะกระจกได้น้อยลง",
       img: four,
     },
     {
@@ -53,8 +45,7 @@ export default function page() {
     {
       id: 7,
       title: "7. กระจกเลนส์ไวด์ ",
-      content:
-        "เพิ่มมุมมองกว้างขึ้น ลดมุมอับสายตา",
+      content: "เพิ่มมุมมองกว้างขึ้น ลดมุมอับสายตา",
       img: seven,
     },
   ];

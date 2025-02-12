@@ -86,7 +86,7 @@ export default function Header() {
         </div>
 
         {/* Desktop Navigation Links */}
-        <ul className=" hidden lg:flex flex-row items-center gap-8 text-white text-[16px] sm:text-[20px] md:text-[24px] z-10">
+        <ul className=" hidden lg:flex flex-row items-center gap-8 text-white text-[16px] sm:text-[20px] md:text-[20px] z-10">
           {renderNavLink("/", "HOME")}
           {renderNavLink("/products", "PRODUCTS")}
           {renderNavLink("/aboutUs", "ABOUT US")}

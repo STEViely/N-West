@@ -13,8 +13,8 @@ export default function Page() {
         ให้การขับขี่ของคุณ
       </h1>
       <div className="mt-4 p-4">
-        <p className="text-center md:text-[22px] text-white">
-          ที่ N-WEST เราไม่เพียงแค่ขายอุปกรณ์แต่งรถ
+        <p className="text-start md:text-[22px] text-white">
+          ที่ <b>N-WEST</b> เราไม่เพียงแค่ขายอุปกรณ์แต่งรถ
           แต่เราคือพันธมิตรสำหรับคนรักรถทุกคน!
           เราเชื่อว่ารถของคุณคือสไตล์ที่สะท้อนตัวตนของคุณ
           เราจึงคัดสรรอุปกรณ์แต่งรถคุณภาพสูง ไม่ว่าจะเป็นกระจกมองข้างดีไซน์เท่
@@ -24,7 +24,7 @@ export default function Page() {
           <br />
           <br />
           เพราะสำหรับเรา รถของคุณไม่ได้เป็นแค่พาหนะ
-          แต่คือความภูมิใจที่ต้องการการดูแลพิเศษ เลือก N-WEST
+          แต่คือความภูมิใจที่ต้องการการดูแลพิเศษ เลือก <b>N-WEST</b>
           แล้วให้เราช่วยเปลี่ยนรถของคุณให้เป็นมากกว่าคำว่า
         </p>
         <h1>"สมบูรณ์แบบ"</h1>
@@ -35,9 +35,9 @@ export default function Page() {
           <Link
             href="https://www.facebook.com/nwest4"
             target="_blank"
-            className="underline font-bold text-blue-800 cursor-pointer"
+            className=" font-bold text-blue-800 cursor-pointer"
           >
-            N_WEST
+            N-WEST
           </Link>
         </p>
         <Link href="https://www.facebook.com/nwest4" target="_blank">
