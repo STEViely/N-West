@@ -20,64 +20,27 @@ export default function SubNavbar({ bg }) {
 
   return (
     <header>
-      <nav className="w-full">
-        <ul
-          className={`flex justify-center text-white  text-[14px] lg:text-[20px] font-light gap-0.5`}
-        >
-          <li
-            className={`w-[120px] lg:w-[180px] lg:h-[40px] p-0.5 bg-gradient-to-b from-[#0000fe] to-[#000939] text-center flex items-center justify-center hover:underline ${
-              isActive("/toyota") ? "underline" : ""
-            }`}
-          >
-            <Link href="/toyota">TOYOTA</Link>
-          </li>
-          <li
-            className={`w-[120px] lg:w-[180px] lg:h-[40px] p-0.5 bg-gradient-to-b from-[#0000fe] to-[#000939] text-center flex items-center justify-center hover:underline ${
-              isActive("/honda") ? "underline" : ""
-            }`}
-          >
-            <Link href="/honda">HONDA</Link>
-          </li>
-          <li
-            className={`w-[120px] lg:w-[180px] lg:h-[40px] p-0.5 bg-gradient-to-b from-[#0000fe] to-[#000939] text-center flex items-center justify-center hover:underline ${
-              isActive("/nissan") ? "underline" : ""
-            }`}
-          >
-            <Link href="/nissan">NISSAN</Link>
-          </li>
-        </ul>
-        {/* <br /> */}
-        <ul
-          className={`flex justify-center text-white text-[14px] lg:text-[20px] font-light gap-0.5`}
-        >
-          <li
-            className={`w-[120px] lg:w-[180px] lg:h-[40px] p-0.5 bg-gradient-to-b from-[#0000fe] to-[#000939] text-center flex items-center justify-center hover:underline ${
-              isActive("/suzuki") ? "underline" : ""
-            }`}
-          >
-            <Link href="/suzuki">SUZUKI</Link>
-          </li>
-          <li
-            className={`w-[120px] lg:w-[180px] lg:h-[40px] p-0.5 bg-gradient-to-b from-[#0000fe] to-[#000939] text-center flex items-center justify-center hover:underline ${
-              isActive("/byd") ? "underline" : ""
-            }`}
-          >
-            <Link href="/byd">BYD</Link>
-          </li>
-          <li
-            className={`w-[120px] lg:w-[180px] lg:h-[40px] p-0.5 bg-gradient-to-b from-[#0000fe] to-[#000939] text-center flex items-center justify-center hover:underline ${
-              isActive("/tesla") ? "underline" : ""
-            }`}
-          >
-            <Link href="/tesla">TESLA</Link>
-          </li>
-          <li
-            className={`w-[120px] lg:w-[180px] lg:h-[40px] p-0.5 bg-gradient-to-b from-[#0000fe] to-[#000939] text-center flex items-center justify-center hover:underline ${
-              isActive("/mazda") ? "underline" : ""
-            }`}
-          >
-            <Link href="/mazda">MAZDA</Link>
-          </li>
+      <nav className="w-full flex justify-center">
+        <ul className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-4 gap-1 text-white text-[14px] lg:text-[20px] font-light lg:flex lg:justify-center justify-items-center">
+          {[
+            { name: "TOYOTA", href: "/toyota" },
+            { name: "HONDA", href: "/honda" },
+            { name: "NISSAN", href: "/nissan" },
+            { name: "SUZUKI", href: "/suzuki" },
+            { name: "BYD", href: "/byd" },
+            { name: "TESLA", href: "/tesla" },
+            { name: "MAZDA", href: "/mazda" },
+            { name: "ALL", href: "/all" },
+          ].map((item, index) => (
+            <li
+              key={index}
+              className={`w-[120px] lg:w-[180px] lg:h-[40px] p-0.5 bg-gradient-to-b from-[#0000fe] to-[#000939] text-center flex items-center justify-center hover:underline ${
+                isActive(item.href) ? "underline" : ""
+              }`}
+            >
+              <Link href={item.href}>{item.name}</Link>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>
