@@ -34,7 +34,7 @@ export default function SubNavbar({ bg }) {
           ].map((item, index) => (
             <li
               key={index}
-              className={`w-[84px] lg:w-[180px] lg:h-[80px] p-0.5 bg-gradient-to-b from-[#0000fe] to-[#000939] text-center flex items-center justify-center hover:underline ${
+              className={` w-[100px] lg:w-[190px] lg:h-[40px] p-0.5 bg-gradient-to-b from-[#0000fe] to-[#000939] text-center flex flex-grow items-center justify-center hover:underline ${
                 isActive(item.href) ? "underline" : ""
               }`}
             >
