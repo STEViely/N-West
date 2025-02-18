@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="th" className="bg-black">
       <body className={ibmThai.className}>
         <Header />
-        <div className="flex flex-col lg:mx-[220px] min-h-screen">
+        <div className="flex flex-col mx-8 lg:mx-[220px] min-h-screen">
           <main>{children}</main>
         </div>
         <Footer />
