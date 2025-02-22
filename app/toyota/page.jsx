@@ -50,25 +50,25 @@ export default function Page() {
 
   const images = [
     {
-      src: "/toyota/viosG1.jpg",
-      alt: "viosG1",
+      src: "/TOYOTA/VIOS 08, YARIS G1.jpg",
+      alt: "VIOS 08, YARIS G1",
       width: 1000,
       height: 1000,
-      name: "VIOS GEN1",
+      name: "VIOS 2008, YARIS Gen:1",
     },
     {
-      src: "/toyota/vios08,yarisG1.jpg",
-      alt: "vios08",
+      src: "/TOYOTA/VIOS 13, YARIS, ALTIS, CAMRY.jpg",
+      alt: "VIOS13, YARIS, CAMRY",
       width: 1000,
       height: 1000,
-      name: "vios08,yarisG1",
+      name: "VIOS13, YARIS, CAMRY",
     },
     {
-      src: "/toyota/vios13,yaris,altis,camry.jpg",
-      alt: "vios13,yaris,altis,camry",
+      src: "/TOYOTA/VIOS G1.jpg",
+      alt: "VIOS Gen:1",
       width: 1000,
       height: 1000,
-      name: "YARIS GEN1, VIOS 13, YARIS, ALTIS, CAMRY",
+      name: "VIOS Gen:1",
     },
   ];
 

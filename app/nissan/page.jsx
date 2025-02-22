@@ -50,8 +50,8 @@ export default function Page() {
 
   const images = [
     {
-      src: "/nissan/nissan almera.jpg",
-      alt: "nissan almera",
+      src: "/NISSAN/ALMERA.jpg",
+      alt: "NISSAN ALMERA",
       width: 1000,
       height: 1000,
       name: "NISSAN ALMERA",

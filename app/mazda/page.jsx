@@ -50,15 +50,15 @@ export default function Page() {
 
   const images = [
     {
-      src: "/mazda/mazda2G1.jpg",
+      src: "/MAZDA/MAZDA 2 G1.jpg",
       alt: "MAZDA 2 Gen1",
       width: 1000,
       height: 1000,
       name: "VIOS GEN1",
     },
     {
-      src: "/mazda/mazda2G2.jpg",
-      alt: "mazda2G1",
+      src: "/MAZDA/MAZDA 2 G2.jpg",
+      alt: "MAZDA2G1",
       width: 1000,
       height: 1000,
       name: "MAZDA 2 Gen2",

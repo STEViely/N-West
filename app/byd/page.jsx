@@ -50,19 +50,26 @@ export default function Page() {
 
   const images = [
     {
-      src: "/byd/bydSeal.jpg",
-      alt: "vSeal",
+      src: "/BYD/BYD ATTO 3.jpg",
+      alt: "BYD ATTO 3",
       width: 1000,
       height: 1000,
       name: "BYD Seal",
     },
 
     {
-      src: "/byd/bydDolphin.jpg",
-      alt: "Dolphin",
+      src: "/BYD/BYD DOLPHIN.jpg",
+      alt: "BYD Dolphin",
       width: 1000,
       height: 1000,
       name: "BYD Dolphin",
+    },
+    {
+      src: "/BYD/BYD SEAL.jpg",
+      alt: "BYD Seal",
+      width: 1000,
+      height: 1000,
+      name: "BYD Seal",
     },
   ];
 

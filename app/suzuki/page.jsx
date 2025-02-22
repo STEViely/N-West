@@ -50,14 +50,14 @@ export default function Page() {
 
   const images = [
     {
-      src: "/suzuki/swiftG2.jpg",
+      src: "/SUZUKI/SWIFT G2.jpg",
       alt: "swiftG2",
       width: 1000,
       height: 1000,
       name: "SUZUKI SWIFT Gen2",
     },
     {
-      src: "/suzuki/swiftG3.jpg",
+      src: "/SUZUKI/SWIFT G3.jpg",
       alt: "swiftG3",
       width: 1000,
       height: 1000,

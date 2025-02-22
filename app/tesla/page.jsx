@@ -50,15 +50,15 @@ export default function Page() {
 
   const images = [
     {
-      src: "/tesla/tesla3.jpg",
-      alt: "tesla3",
+      src: "/TESLA/TESLA 3.jpg",
+      alt: "TESLA3",
       width: 1000,
       height: 1000,
       name: "TESLA model:3",
     },
     {
-      src: "/tesla/teslaY.jpg",
-      alt: "tesla Y",
+      src: "/TESLA/TESLA Y.jpg",
+      alt: "TESLA Y",
       width: 1000,
       height: 1000,
       name: "TESLA model: Y",
