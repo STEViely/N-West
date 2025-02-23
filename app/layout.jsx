@@ -17,10 +17,10 @@ export default function RootLayout({ children }) {
     <html lang="th" className="bg-black">
       <body className={ibmThai.className}>
         <Header />
-        <div className="flex flex-col mx-8 lg:mx-[220px] min-h-screen">
+        <div className="flex flex-col mx-8 lg:mx-[220px] min-h-screen mb-8">
           <main>{children}</main>
         </div>
-        <Footer />
+ 
       </body>
     </html>
   );

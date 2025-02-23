@@ -108,7 +108,7 @@ export default function Page() {
             onTouchEnd={handleTouchEnd}
           >
             <button
-              className="absolute right-1/2 top-[-50px] text-white font-bold text-[24px] lg:text-[80px] sm:text-[32px] lg:right-1/2 sm:top-[-40px] lg:top-[-200px]"
+              className="absolute right-[180px] top-[-70px] rounded-[100%] text-white font-bold text-[24px] lg:text-[80px] sm:text-[32px] lg:right-1/2 sm:top-[-40px] lg:top-[-200px] border border-white w-[50px] h-[50px]"
               onClick={closeModal}
             >
               ×
@@ -119,7 +119,7 @@ export default function Page() {
                 {images[currentImageIndex].name}
               </span>
               <button
-                className="absolute left-[-30px] top-1/4 text-white font-bold text-[24px] sm:text-[32px] lg:text-[50px] lg:top-1/3"
+                className="absolute left-[10px] top-[70px] text-white font-bold text-[24px] sm:text-[32px] lg:text-[50px] lg:top-1/3"
                 onClick={prevImage}
               >
                 &lt;
@@ -127,11 +127,11 @@ export default function Page() {
               <Image
                 src={images[currentImageIndex].src}
                 alt={images[currentImageIndex].alt}
-                width={800}
+                width={300}
                 height={400}
               />
               <button
-                className="absolute right-[-30px] top-1/4 text-white font-bold text-[24px] sm:text-[32px] lg:text-[50px] lg:top-1/3"
+                className="absolute right-[10px] top-[70px] text-white font-bold text-[24px] sm:text-[32px] lg:text-[50px] lg:top-1/3"
                 onClick={nextImage}
               >
                 &gt;

@@ -5,13 +5,13 @@ export default function ProductContainer({ link, productType, logo }) {
   return (
     <div className="mx-auto ">
       <Link href={link} className="flex flex-wrap">
-        <div className="relative rounded-[16px] bg-white h-[150px] w-[150px] h-[150px] w-[150px]  flex items-center justify-center group overflow-hidden">
+        <div className="relative rounded-[16px] bg-white  h-[80px] w-[80px] md:h-[200px] md:w-[200px] lg:h-[200px] lg:w-[200px] 2xl:h-[350px] 2xl:w-[350px] flex items-center justify-center group overflow-hidden">
           {/* โลโก้ */}
           <img
             src={logo}
             alt={`${productType} Logo`}
-            width={70}
-            className="relative z-10 transition-opacity duration-300 ease-in-out"
+            width={60}
+            className="relative z-10 transition-opacity duration-300 ease-in-out md:w-[100px] 2xl:w-[200px]"
           />
           {/* พื้นหลังจาง */}
           <div className="hidden group-hover:block bg-white opacity-80 w-full h-full absolute z-0 transition-opacity duration-300"></div>

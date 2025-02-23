@@ -12,7 +12,7 @@ export default function Page() {
   ];
 
   return (
-    <div className="flex flex-wrap gap-2 mt-6">
+    <div className="flex flex-wrap gap-4 mt-6">
       {container.map((el) => (
         <ProductContainer
           key={el.id}
