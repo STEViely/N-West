@@ -108,7 +108,7 @@ export default function Page() {
             onTouchEnd={handleTouchEnd}
           >
             <button
-              className="absolute right-[180px] top-[-70px] rounded-[100%] text-white font-bold text-[24px] lg:text-[80px] sm:text-[32px] lg:right-1/2 sm:top-[-40px] lg:top-[-200px] border border-white w-[50px] h-[50px]"
+              className="absolute right-[180px] sm:right-[225px] top-[-70px] sm:top-[-120px] rounded-[100%] text-white font-bold text-[24px] lg:text-[80px] sm:text-[32px] lg:right-1/2  lg:top-[-200px] border border-white w-[50px] h-[50px]"
               onClick={closeModal}
             >
               ×
@@ -129,6 +129,7 @@ export default function Page() {
                 alt={images[currentImageIndex].alt}
                 width={300}
                 height={400}
+                className="sm:w-[500px]"
               />
               <button
                 className="absolute right-[10px] top-[70px] text-white font-bold text-[24px] sm:text-[32px] lg:text-[50px] lg:top-1/3"
